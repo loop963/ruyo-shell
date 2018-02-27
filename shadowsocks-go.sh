@@ -144,7 +144,7 @@ pre_install(){
     # Set shadowsocks-go config password
     echo "Please input password for shadowsocks-go:"
     #read -p "(Default password: teddysun.com):" shadowsockspwd
-    [ -z "${shadowsockspwd}" ] && shadowsockspwd="RUYO.net"
+    [ -z "${shadowsockspwd}" ] && shadowsockspwd="A3u7.in"
     echo
     echo "---------------------------"
     echo "password = ${shadowsockspwd}"
@@ -155,7 +155,7 @@ pre_install(){
     do
     echo -e "Please input port for shadowsocks-go [1-65535]:"
     #read -p "(Default port: 8989):" shadowsocksport
-    [ -z "${shadowsocksport}" ] && shadowsocksport="443"
+    [ -z "${shadowsocksport}" ] && shadowsocksport="35182"
     expr ${shadowsocksport} + 0 &>/dev/null
     if [ $? -eq 0 ]; then
         if [ ${shadowsocksport} -ge 1 ] && [ ${shadowsocksport} -le 65535 ]; then
